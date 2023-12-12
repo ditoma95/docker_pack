@@ -76,3 +76,7 @@ sudo docker compose logs
    DB_USERNAME=admin
    DB_PASSWORD=admin
    ```
+
+
+
+* [ ]
