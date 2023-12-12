@@ -66,3 +66,13 @@ sudo docker compose logs
    ```bash
    sudo docker logs conteneur_web
    ```
+5. Configuratin du point .env
+
+   ```php
+   DB_CONNECTION=pgsql
+   DB_HOST=db
+   DB_PORT=5432
+   DB_DATABASE=laravel
+   DB_USERNAME=admin
+   DB_PASSWORD=admin
+   ```
