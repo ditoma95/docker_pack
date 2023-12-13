@@ -11,12 +11,13 @@ sudo docker run -itd --name applicatin laravel_php
 
 ```
 
-1. Autres options
-2. Pour rentrer dans le container
-3. Installer composer pour verification
-4. Manipulation du projet
+1. [ ] Autres options
+2. [ ] Pour rentrer dans le container
+3. [ ] Installer composer pour verification
+4. [ ] Manipulation du projet
 
-   1. [ ]  execution du projet
+
+   1. [ ] [ ]  execution du projet
 
 ```
 sudo docker compose up [-d]
