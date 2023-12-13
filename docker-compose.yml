@@ -13,7 +13,7 @@ services:
        SERVICE_NAME: app
        SERVICE_TAGS: prod
     volumes:
-      - ./php/app/:/var/www/
+      - app-data:/var/www/
       - ./php/local;ini:/usr/local/etc/php/conf.d/local.ini
     networks:
       - laravel-network
@@ -39,16 +39,18 @@ services:
     ports:
       - "8080:80"
       - "8081:443"
-    links:
-      - app
-
+    networks:
+      - laravel-network
+    volumes:
+      - app-data:/var/www/
 
 
 
 volumes:
   data:
     driver: local
-
+  app-data:
+    driver: local
 
 
 networks:

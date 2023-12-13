@@ -41,7 +41,6 @@ sudo docker compose logs
    ```bash
    sudo docker run -itd --name conteneur_web --add-host app:192.168.60.152 web
    ```
-
    Explication ❤️
 
    ```text
@@ -76,7 +75,8 @@ sudo docker compose logs
    DB_USERNAME=admin
    DB_PASSWORD=admin
    ```
+6. Pour verifier la configuration
 
-
-
-* [ ]
+   ```bash
+   sudo docker compose config
+   ```

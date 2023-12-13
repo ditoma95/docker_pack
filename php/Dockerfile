@@ -19,15 +19,15 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     libonig-dev \
     locales \
-    zip \
-    unzip \
+    # zip \
+    # unzip \
     jpegoptim optipng pngquant gifsicle \
    # vim \
    # git \
-    curl \
+    # curl \
     wget \
     libpq-dev\
-    zsh \
+    # zsh \
     && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
     && docker-php-ext-install pdo pdo_pgsql pgsql \
     && docker-php-ext-install \
@@ -35,12 +35,12 @@ RUN apt-get update && apt-get install -y \
         mbstring \
         pcntl \
         intl \
-        zip \
+	    zip \
         opcache \
-    && apt-get install -y \
-    libmagickwand-dev --no-install-recommends \
-    && pecl install imagick \
-    && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/docker-php-ext-imagick.ini \
+   # && apt-get install -y \
+    # libmagickwand-dev --no-install-recommends \
+    # && pecl install imagick \
+    # && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/docker-php-ext-imagick.ini \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install composer
